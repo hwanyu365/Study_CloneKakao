@@ -1,0 +1,101 @@
+html {
+  background-color: black;
+  color: whitesmoke;
+}
+
+body {
+  height: 1000vh;
+}
+
+HigTitle {
+  color: rgba(199, 43, 63, 0.89);
+  font-size: 50px;
+  font-style: italic;
+}
+
+#copyright {
+  display: block;
+  color: white;
+  text-align: center;
+}
+
+.span_margin {
+  margin: 10px;
+  background-color: violet;
+  padding-inline: 20px;
+}
+
+.btn {
+  padding-inline: 10px;
+  border-radius: 5px;
+}
+
+.colored {
+  background-color: tomato;
+}
+
+.colored:nth-child(odd) {
+  background-color: palevioletred;
+}
+
+.dashed_div {
+  width: 100%;
+  height: 50px;
+  border: 2px dashed white;
+  border-radius: 10px;
+}
+
+.div_container {
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.div_aligned {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+#fixed_div {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  opacity: 0.3;
+}
+
+.relative_div {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: burlywood;
+  top: 10px;
+  left: 10px;
+}
+
+p span {
+  color: aqua;
+}
+
+div > span {
+  color: white;
+  background-color: teal;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+input:required {
+  border: 10px solid cadetblue;
+}
+
+input[type="password"] {
+  color: tomato;
+}
