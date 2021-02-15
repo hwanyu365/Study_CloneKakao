@@ -1,0 +1,40 @@
+.dot-nav {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.more-screen .icon-raw {
+  margin-top: 25px;
+}
+
+.more-suggestions {
+  border-top: var(--divider);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.more-suggestions__title {
+  margin-bottom: 10px;
+}
+
+.more-suggestions__icons {
+  display: flex;
+}
+
+.more-suggestions__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 5px;
+}
+
+.more-suggestions__icon-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.more-suggestions__icon-title {
+  color: var(--kokoa-gray);
+  margin-top: 10px;
+}

@@ -24,9 +24,6 @@
   height: 60px;
 }
 
-.user-component__text {
-}
-
 .user-component__title {
   font-size: 18px;
   font-weight: 600;
@@ -41,6 +38,15 @@
   margin-top: 4px;
   font-size: 17px;
   color: var(--kokoa-gray);
+}
+
+.user-component__subtitle i {
+  margin-left: 5px;
+  color: tomato;
+}
+
+.user-component__message i {
+  color: black;
 }
 
 .user-component__time {

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find - KokoaTalk</title>
+    <title>Chat - KokoaTalk</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -91,104 +91,60 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
-      <div class="screen-header__icons">
-        <span><i class="fas fa-search fa-lg"></i></span>
-        <span>
-          <a href="settings.html"><i class="fas fa-cog fa-lg"></i></a>
-        </span>
-        <div class="dot dot-header"></div>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html"><i class="fas fa-chevron-left fa-lg"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Hwanyu365</h1>
+      </div>
+      <div class="alt-header__column">
+        <div class="alt-header__icons">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="icon-raw">
-        <div class="icon-raw__icon">
-          <i class="fas fa-qrcode fa-lg"></i>
-          <span>QR Code</span>
-        </div>
-        <div class="icon-raw__icon">
-          <i class="far fa-address-book fa-lg"></i>
-          <span>Add by Contacts</span>
-        </div>
-        <div class="icon-raw__icon">
-          <i class="far fa-address-card fa-lg"></i>
-          <span>Add by ID</span>
-        </div>
-        <div class="icon-raw__icon">
-          <i class="far fa-envelope fa-lg"></i>
-          <span>Invite</span>
-        </div>
-      </div>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2020</div>
 
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span class="recommended-friends__empty"
-          >You have no recommended friends.</span
-        >
-      </div>
-
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <span class="open-chat__header__title">Open Chat</span>
-          <span class="open-chat__header__nav-text"
-            >Go to Openchat Home<i class="fas fa-chevron-right fa-xs"></i
-          ></span>
-        </div>
-
-        <div class="open-post">
-          <div class="open-post__column">
-            <h5 class="open-post__title">#BTS</h5>
-            <h6 class="open-post__hashtags">#bts#army#friends</h6>
-            <div class="open-post__members">
-              <img
-                src="https://dbscthumb-phinf.pstatic.net/5116_000_2/20200917153353121_E2JQP9997.png/48%EC%99%80%EC%9A%B0.png?type=m1500_q100"
-              />
-              <span class="open-post__member-count">802 memebers</span>
-              <div class="divider"></div>
-              <span class="open-post_member-status">Active</span>
-            </div>
+      <div class="chat-row">
+        <img
+          class="user-component__avatar"
+          src="https://dbscthumb-phinf.pstatic.net/5116_000_2/20200917153353121_E2JQP9997.png/48%EC%99%80%EC%9A%B0.png?type=m1500_q100"
+        />
+        <div class="chat-row__content">
+          <span class="chat-row__author">Hwanyu365</span>
+          <div class="chat-row__info">
+            <span class="chat-row__message">Hi!</span>
+            <span class="chat-row__timestamp">21:27</span>
           </div>
-          <div class="open-post__column">
-            <div class="open-post__photo">
-              <img
-                src="https://dbscthumb-phinf.pstatic.net/5116_000_2/20200917153353121_E2JQP9997.png/48%EC%99%80%EC%9A%B0.png?type=m1500_q100"
-              />
-              <div class="open-post__heart-count">
-                <i class="fas fa-heart"></i><span>326</span>
-              </div>
-            </div>
+        </div>
+      </div>
+
+      <div class="chat-row chat-row--send">
+        <div class="chat-row__content">
+          <div class="chat-row__info">
+            <span class="chat-row__message">Hi! Nice to meet you!</span>
+            <span class="chat-row__timestamp">21:28</span>
           </div>
         </div>
       </div>
     </main>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="far fa-user fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <i class="far fa-comment fa-2x"></i>
-            <span class="nav__notification badge">1</span>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link">
-            <i class="fas fa-search fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile-wink"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
 
     <div id="no-mobile">
       <span>Your screen is too big</span>
